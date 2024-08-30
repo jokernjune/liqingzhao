@@ -1,0 +1,199 @@
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'KaiTi', '楷体', serif;
+  margin: 0;
+}
+
+.header {
+  padding: 70px;
+  text-align: center;
+  background-image: url("test.png");
+  color: white;
+}
+
+.header h1 {
+  font-size: 90px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #333;
+  color: white;
+}
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>李清照</h1>
+  <h2>千古第一才女</h2>
+</div>
+
+<div class="navbar">
+  <a href="hyper2.html">词风</a>
+  <a href="zuopin.html">作品</a>
+  <a href="hyper4.html">爱恨情仇</a>
+  <a href="hyper3.html" class="right">争议</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2 style="color:#6e2c00;">简介</h2>
+    <h5>李清照（1084年3月13日～1155年5月12日）“清照”名字的由来，源于唐代诗人王维的“明月松间照，清泉石上流”</h5>
+    <div> <img src="unnamed.png" style="width:99%" alt="李清照画像"></div>
+    <h5>
+      <li>字易安，号易安居士</li>
+      <li>“易安”取自陶渊明的《归去来兮辞》当中的“倚南窗以寄傲，审容膝之易安”</li>
+      <li>汉族，山东省济南章丘人。</li>
+      <li>宋代（南北宋之交）女词人，婉约词派代表，有“千古第一才女”之称</li>
+    </h5>
+    <img src="unnamed1.png" style="width:99%" alt="文学家评价">
+    <h4>文学家对李清照的评价：</h4>
+    <h5>
+      <ul>
+        <li>沈谦：韵学家沈谦在《填词杂说》就写道：男中李后主，女中李易安，极是当行本色。</li>
+        <li>朱熹：“本朝妇人能文者，惟魏夫人及李易安二人而已。”</li>
+        <li>杨慎：“宋人中填词李易安亦称冠绝”</li>
+        <li>沈曾植：将李词的艺术魅力描述为：“堕情者醉其芳馨，飞想者赏其神骏”</li>
+        <li>郑振铎：“李清照是宋代最伟大的一位女诗人，也是中国文学史上最伟大的一位女诗人，……像她那样的词，在意境一方面，在风格一方面，都可以说是前无古人后无来者”。</li>
+      </ul>
+    </h5>
+  </div>
+  <div class="main">
+    <h2 style="color:#6e2c00;">生平</h2>
+    <h3 style="color:#ba4a00;">早期：</h3>
+    <ul>
+      <li>李清照出生于书香门第，早期生活优裕。</li>
+      <li>其父李格非藏书甚富，她小时候就在良好的家庭环境中打下文学基础。</li>
+      <li>母亲王氏系出名门，高祖王景图、曾祖王赞，都荣登进士</li>
+    </ul>
+    <h3 style="color:#ba4a00;">婚姻：</h3>
+    <ul>
+      <li>建中靖国元年（1101年），李清照18岁，与长她三岁的金石学家赵明诚结婚。</li>
+      <li>夫妻二人前期生活安定优裕</li>
+      <li><b>词作多写闺阁之怨或是对出行丈夫的思念，如《一翦梅》：「此情无计可消除，才下眉头、却上心头」。</b></li>
+      <li>1107年移居青州。</li>
+      <li>1127年金兵攻陷青州，李清照与丈夫南渡江宁</li> 
+    </ul>
+    <div> <img src="test2.jpg" style="width:99%" alt="南渡后的生活"></div>
+    <h3 style="color:#ba4a00;">南渡后的生活：</h3>
+    <ul>
+      <li>1129年，赵明诚独自前往就任湖州知事。</li>
+      <li>1131年三月，在土民钟氏之家，一夕书画被盗。</li>
+      <li>当年与丈夫收集的金石古卷，全部散佚，令她饱受打击，前后经历了国破家亡、暮年飘零后，感情基调转为凄怆沉郁</li>
+      <li><b>写作转为对现实的忧患，如《声声慢》“寻寻觅觅，冷冷清清，凄凄惨惨戚戚”。</b></li>
+    </ul>
+    <h3 style="color:#ba4a00;">晚年：</h3>
+    <ul>
+      <li>孤寡再嫁官右承务郎、监诸军审计司官吏张汝舟</li>
+      <li>张汝舟的婚姻图谋完全是出于对李清照藏品的贪婪</li>
+      <li>结婚不久随即离婚，甚至因此闹上公堂</li>
+      <li>她的诗词创作更加凝重，表达了对失去亲人和故土的深深思念与悲痛</li>
+      <li><b>她的词中反映了她当时的愁苦心情，如《武陵春》“风住尘香花已尽，日晚倦梳头。物是人非事事休，欲语泪先流”</b></li>
+    </ul>
+    <div> <img src="test3.png" style="width:99%" alt="晚年生活"></div>
+  </div>
+</div>
+
+<div class="footer">
+  <h4><i>李清照的一生充满了挣扎和坎坷，她在爱与伤害之间徘徊，最终留下了许多充满悲伤和遗憾的诗篇，成为了中国文学史上不可磨灭的一笔。在这段波澜壮阔的人生旅程中，李清照的坚强和执着令人敬佩，她的诗词也成为了中国文学史上永恒的经典。</i></h4>
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.querySelector(".navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.scrollY >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+</body>
+</html>

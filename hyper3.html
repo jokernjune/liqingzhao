@@ -1,0 +1,131 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fbeee6;
+      font-family: kaiti;
+      margin-right: 250;
+margin-left: 250;
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      justify-content: center;
+    }
+
+    .column {
+      float: left;
+      width: 50%;
+      padding: 50px;
+      text-align: center;
+      font-size: 30px;
+      cursor: pointer;
+      color: white;
+    }
+
+    .containerTab {
+      padding: 50px;
+      color: black;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .closebtn {
+      float: right;
+      color: white;
+      font-size: 35px;
+      cursor: pointer;
+    }
+
+    #div1 {
+      font-size: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      margin-bottom: 20px;
+    }
+</style>
+</head>
+<body>
+  </style>
+</head>
+<body>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <div id="div1" class="fa"></div>
+
+  <div style="text-align:center">
+    <h1 style="background-color:#6e2c00;color:white">争议</h1>
+    <p>点击以下格子 :D</p>
+  </div>
+
+  <script>
+    function ratestar() {
+      var a = document.getElementById("div1");
+      a.innerHTML = "&#xf006;"; 
+      setTimeout(function () {
+        a.innerHTML = "&#xf123;"; 
+      }, 1000);
+      setTimeout(function () {
+        a.innerHTML = "&#xf005;"; 
+      }, 2000);
+    }
+
+    ratestar();
+    setInterval(ratestar, 3000); 
+  </script>
+
+  <div class="row">
+    <div class="column" onclick="openTab('b1');" style="background:#edbb99;">
+      “女子无才便是德”
+    </div>
+    <div class="column" onclick="openTab('b2');" style="background:#fad7a0;">
+      宋代寡妇的艰难处境
+    </div>
+  </div>
+
+  <div id="b1" class="containerTab" style="display:none;background:#edbb99">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <h2>
+      李清照是历史的一个“例外”，在本就不多的才女当中，她是唯一一位在文学史上取得了崇高文学地位的女性。她被看作婉约派的词宗，与李白、李煜并称为词家三李。
+    </h2>
+    <p>中国历史上才女并不多见，因其实是来自社会的偏见，导致许多女性文人的作品一直不被作为主流看待。男性对于文学为古代文坛是由男性主导的，女性写作并不被鼓励，更不可能得到支持，她们的作品很多都难以保留。这的垄断，到唐宋更是达到了巅峰。可以说，男性几乎堵死了女性进入文坛的各种路径，因此，想要获得与男性一样的成就十分艰难。</p>
+<img src="33.jpg" style="width:99%">  
+</div>
+
+  <div id="b2" class="containerTab" style="display:none;background:#fad7a0">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+    <h2>寡妇想要自立并不容易，哪怕在太平年代，有成年子孙的体恤照顾，一位寡妇的日子总不太好过。</h2>
+    <p>我们或许猜想，作为特权精英之一的李清照会比同时代其他寡妇的生活来得容易些，生计更有保障，也更自立。然而，她的书画艺术收藏等物质财富却使她更易成为脆弱的攻击目标，尤其是在社会失序的战乱年代，其收藏令这位单身寡妇身临险境。</p>
+    <p>通过李清照的切身经历，我们也看到，一位妇女若是嫁错了人，她的处境会多么悲惨。李清照一旦认清了新任丈夫的本来面目，她便身处两难境地：如果她继续维系这段婚姻，就会不断遭受虐待，并最终失去她的所有财产；可如果她决定作个了断，她就成了公众羞辱与嘲讽的对象。李清照凭借其社会地位及受人追捧的作品，在当时赢得了其他妇女无法想象的知名度。如今，她却在新的舆论眼光下声名狼藉，原先对她才名的倾慕也转化为对其为人的非笑。
+    </p>
+<img src="496.jpg" style="width:99%">  
+  </div>
+
+  <div id="b3" class="containerTab" style="display:none;background:red">
+    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  </div>
+
+  <script>
+    function openTab(tabName) {
+      var i, x;
+      x = document.getElementsByClassName("containerTab");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      document.getElementById(tabName).style.display = "block";
+    }
+  </script>
+
+</body>
+</html>

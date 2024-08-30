@@ -1,0 +1,158 @@
+<html>
+<head>
+<body  style="background-color:#fbeee6;">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: kaiti;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.collapsible {
+  background-color: darksalmon;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 25px;
+}
+
+.active, .collapsible:hover {
+  background-color: #6e2c00;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 50px;
+  max-height: 0;
+ font-size: 25px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+</style>
+</head>
+<body>
+
+<h1 style="color:#6e2c00;">作品</h1>
+<p>李清照存世作品并不多，词约50首，诗14首，文不足10篇。其实李清照集的宋刊本本来有很多，但都已经失传，现存的作品都是从明清的选本、笔记中搜罗来的。</p>
+
+
+<ol><b>例子：</b>
+<li>现存最早的李清照集：《诗词杂俎》，收录李清照词17首。</li>
+<li>收录李词最多的版本：《漱玉词》一卷，收李清照词49首。</li>
+<li>《宋史·艺文志》载有《易安居士文集》7卷、《易安词》6卷</li>
+</ol>
+
+<h1 style="background-color:#6e2c00;color:white">经典宋词</h1>
+
+<div class="clearfix">
+  <div class="column">
+    <h2>最清新雅致的词：</h2>
+    <p>《如梦令·昨夜雨疏风骤》</p>
+    <p><img src="image.png" style="width:99%"></p>
+  </div>
+  <div class="column">
+    <h2>最俏皮的爱情词：</h2>
+    <p>《点绛唇·蹴罢秋千》</p>
+    <p><img src="hyper3.jpeg" style="width:99%"></p>
+  </div>
+</div>
+
+<div class="clearfix">
+  <div class="column">
+    <h2>最唯美的词：</h2>
+    <p>《一剪梅·红藕香残玉簟秋》</p>
+    <p><img src="4.jpeg" style="width:99%"></p>
+  </div>
+  <div class="column">
+    <h2>最慷慨的诗：</h2>
+    <p>《夏日绝句》</p>
+    <p><img src="0.jpg" style="width:99%"></p>
+  </div>
+</div>
+
+<div class="clearfix">
+  <div class="column">
+    <h2>最令人伤怀的词：</h2>
+    <p>《醉花阴·薄雾浓云愁永昼》</p>
+    <p><img src="image(2).png" style="width:99%"></p>
+  </div>
+  <div class="column">
+    <h2>最锥心愁苦的词：</h2>
+    <p>《声声慢·寻寻觅觅》</p>
+    <p><img src="image(1).png" style="width:99%"></p>
+  </div>
+</div>
+
+<div class="clearfix">
+  <div class="column">
+    <h2>最沉痛哀婉的词：</h2>
+    <p>《武陵春·春晚》</p>
+    <p><img src="5.jpeg" style="width:99%"></p>
+  </div>
+</div>
+<h1 style="background-color:#6e2c00;color:white">《词论》——“词，别是一家”<h1>
+<button class="collapsible">目的：</button>
+<div class="content">
+<p>正式向文坛宣布，词作为独立文体的价值，词不应该是诗的附庸
+强调了词与诗的分野，强调词配合词牌所对应的曲调演唱的重要性
+通过对先前各家的评价中，系统地阐述了优秀词作的标准。
+背景：苏轼“自是一家”论和豪放词的出现掀起了词坛论争，争论的焦点集中在三方面：
+<ol>
+<li>是苏轼打破声律是否可取，</li>
+<li>是用词抒写豪情壮志的得失，</li>
+<li>是词的风格是豪放壮美，还是婉约优美。</li>
+</ol>
+李清照投身到这场论争中，对这三个问题发表了自己的见解，起到了重要作用</P>
+</div>
+<button class="collapsible">影响：</button>
+<div class="content">
+<p>《词论》不但是宋代词坛上有独特见解，有组织条理的第一篇词论，更是中国女性作的文学批评第一篇专文。</p>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
+</body>
+</html>
